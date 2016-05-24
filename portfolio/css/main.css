@@ -1,0 +1,51 @@
+h1 {
+    font-family: 'Lato', sans-serif, 300px;     
+}
+
+h2 {
+    max-width: 300px;
+}
+
+.jumbotron {
+  padding: 15px;
+  margin-bottom: 30px;
+  color: inherit;
+  background-color: #747704; 
+}
+
+.navbar {
+  position: relative;
+  min-height: 50px;
+  margin-bottom: 20px;
+  border: 1px solid transparent;
+  background-color: #294860;
+}
+
+.jumbotron h2 {
+    color: #f8981c;
+    font-size: 10em;
+    max-width: 250px;
+    border: 5px solid #f8981c;
+    border-radius: 50px;   
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+/**
+ * Add media queries for screen sizes of 550px and less to ensure that the logo is displayed
+    properly without any glitches
+ */
+@media screen and (max-width: 590px) {
+  .jumbotron h2 {
+    color: #f8981c;
+    font-size: 5em;
+    max-width: 150px;
+    border: 5px solid #f8981c;
+    border-radius: 30px;
+    padding: 1px;
+    }
+    
+    h1, h3 {
+        font-size: 2em;
+    }
+}
