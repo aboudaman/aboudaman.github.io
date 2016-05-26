@@ -29,7 +29,7 @@ function nextSlide() {
 	$(".slide").fadeOut(speed);
 	$(".active").fadeIn(speed);
 
-};
+}
 
 function previousSlide() {
 	$(".active").removeClass("active").addClass("oldActive");
@@ -41,7 +41,7 @@ function previousSlide() {
 	}
 	$(".oldActive").removeClass("oldActive");
 	$(".slide").fadeOut(speed);
-	$(".active").fadeIn(speed)
+	$(".active").fadeIn(speed);
 }
 
 // Move the slides by tracking the next and previous button clicks
