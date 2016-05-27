@@ -2,16 +2,16 @@
 var projects = {
 	"projectsCompleted": [
 		{
-			"title": "This is a first title",
+			"title": "Lorem ipsum dolor sit.",
 			"dates": "May 2015",
-			"description": "This is a description for the first project",
+			"description": "<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus reiciendis adipisci modi maxime pariatur cum sit! Non omnis, distinctio obcaecati.</p>",
 			"images": "images/city.jpg"
 	
 		}, {
 
-			"title": "This is a second title",
+			"title": "Lorem ipsum dolor sit.",
 			"dates": "April 2015",
-			"description": "This is a description for the second project",
+			"description": "<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur nostrum reiciendis minima deleniti perferendis aut iure dolores ut architecto modi aliquid, ipsam? Distinctio impedit ut quidem, natus porro eveniet illo!</p>",
 			"images": "images/abstract1.jpg"
 		}
 
