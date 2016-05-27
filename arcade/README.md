@@ -1,17 +1,6 @@
 frontend-nanodegree-arcade-game
 ===============================
-
-Students should use this rubric: https://www.udacity.com/course/viewer#!/c-ud015/l-3072058665/m-3072588797
-
-for self-checking their submission.
-
-Script to check mouse position on the browser
-
-document.onmousemove = function(e){
-var x = e.pageX;
-var y = e.pageY;
-e.target.title = "X is "+x+" and Y is "+y;
-};
+This project was created as part of the Front End Nanodegree.
 
 How to start Game
 ==================
