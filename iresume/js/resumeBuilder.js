@@ -3,16 +3,16 @@ var bio = {
 	"name": "Aboubacar Daman",
 	"role": "Web Developer",
 	"contactInfo": {
-	"email": "adaman2000@gmail.com",
+	"email": "abc@abc.com",
 	"address": "Orlando, Florida",
-	"cellphone": 5558098877,
-	"github": "adaman",
-	"twitter": "No Twitter",
-	"location": "Port Au Prince, Haiti"
+	"cellphone": 407555555,
+	"github": "lorem",
+	"twitter": "lorem",
+	"location": "Orlando, FL"
 	},
 	"pictureURL": "images/ninja.jpg",
 	"welcomeMessage": "Welcome to my Interactive Resume",
-	"skills": ["Javascript", "HTML/CSS", "PHP", "Network Design"]
+	"skills": ["Javascript", "HTML/CSS", "PHP", "Bootstrap", "Jasmine"]
 };
 
 // Create a work Object
@@ -23,13 +23,13 @@ var work = {
 	"title": "IT Specialist",
 	"location": "Port Au Prince, Haiti",
 	"dates": "2010 to Present",
-	"description": "Network, project manager"
+	"description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente pariatur sed dolore numquam natus eius a, aliquam cum voluptatibus magnam."
 	}, {
 	"employer": "ABC2 Company",
-	"title": "Telecom tech",
+	"title": "System Dev tech",
 	"location": "NYC, USA",
 	"dates": "2002 to 2010",
-	"description": "Telecommunications"
+	"description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet, repudiandae."
 	}
 	]
 };
@@ -38,32 +38,32 @@ var work = {
 var education = {
 	"schools": [
 	{
-	"name": "University of Salford",
+	"name": "Lorem ipsum dolor sit.",
 	"years": "2013 - 2014",
-	"city": "Salford, Manchester",
-	"degree": ["MS"],
-	"website": "http://www.abc.com",
-	"major": "Project Management"
+	"city": "Lorem ipsum dolor.",
+	"degree": ["lorem"],
+	"website": "Lorem ipsum.",
+	"major": "Lorem ipsum dolor sit."
 	},{
-	"name": "University of Manchester",
+	"name": "Lorem ipsum dolor sit amet.",
 	"years": "1997-2000",
-	"city": "Manchester, United Kingdom",
-	"degree": ["BEng"],
-	"website": "http://www.abc.com",
-	"major": "Electrical and Electronic Engineering"
+	"city": "Lorem ipsum.",
+	"degree": ["lorem"],
+	"website": "Lorem ipsum dolor sit.",
+	"major": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque, numquam."
 	}
 	],
 	"onlineCourses":[
 	{
-	"title": "Front-End Web Development Nanodegree",
+	"title": "Lorem ipsum dolor sit amet, consectetur adipisicing elit.",
 	"onlineDates": 2015,
-	"onlineSchool": "udacity.com",
-	"onlineURL": "http://www.udacity.com"
+	"onlineSchool": "Lorem ipsum dolor sit.",
+	"onlineURL": "Lorem ipsum dolor sit."
 	},{
-	"title": "Web Development PHP/MYSQL",
+	"title": "Lorem ipsum dolor sit.",
 	"onlineDates": "2014 to 2015",
-	"onlineSchool": "Lynda.com",
-	"onlineURL": "http://www.lynda.com"
+	"onlineSchool": "Lorem ipsum dolor sit.",
+	"onlineURL": "Lorem ipsum dolor sit."
 	}
 	]
 };
@@ -95,7 +95,7 @@ if (bio.skills.length > 0) {
 	}
 }
 
-}
+};
 
 topContacts.display = function() {
 // Checks if there are entries for contact information in bio object
@@ -129,13 +129,15 @@ if (checkContacts !== true) {
 }
 
 };
-
+/**
+ * Display education information
+ */
 education.display = function() {
 
 	$("#education").append(HTMLschoolStart);
 	$("#onlineClasses").append(HTMLonlineClasses);
 
-	for (school in education.schools) {
+	for (var school in education.schools) {
 		
 		var schoolName = HTMLschoolName.replace("%data%", education.schools[school].name);
 		var schoolDegree = HTMLschoolDegree.replace("%data%", education.schools[school].degree);
@@ -150,7 +152,7 @@ education.display = function() {
 		$(".education-entry:last").append(major);
 	}
 	
-	for (onlineCourse in education.onlineCourses) {
+	for (var onlineCourse in education.onlineCourses) {
 
 		var onlineTitle = HTMLonlineTitle.
 							replace("%data%", education.onlineCourses[onlineCourse].title);
@@ -167,17 +169,20 @@ education.display = function() {
 
 	}
 
-}
+};
+/**
+ * Display work information
+ */
 
 work.display = function() {
 
 	$("#workExperience").append(HTMLworkStart);
 
-	for (job in work.jobs) {
+	for (var job in work.jobs) {
 
 		var employer = HTMLworkEmployer.replace("%data%", work.jobs[job].employer);
 		var title = HTMLworkTitle.replace("%data%", work.jobs[job].title);
-		var employerTitle = employer + title
+		var employerTitle = employer + title;
 		$(".work-entry:last").append(employerTitle);
 
 		var datesWorked = HTMLworkDates.replace("%data%", work.jobs[job].dates);
