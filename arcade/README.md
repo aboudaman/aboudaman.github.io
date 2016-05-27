@@ -1,7 +1,5 @@
-##Arcade Game
-===============================
-This project was created as part of the Front End Nanodegree.
-
+## Arcade Game
+==================
 How to start Game
 ==================
 1) The game is run inside a web browser
