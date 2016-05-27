@@ -1,4 +1,4 @@
-frontend-nanodegree-arcade-game
+##Arcade Game
 ===============================
 This project was created as part of the Front End Nanodegree.
 
