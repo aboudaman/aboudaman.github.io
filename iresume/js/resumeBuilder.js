@@ -12,7 +12,7 @@ var bio = {
 	},
 	"pictureURL": "images/ninja.jpg",
 	"welcomeMessage": "Welcome to my Interactive Resume",
-	"skills": ["Javascript", "HTML/CSS", "PHP", "Bootstrap", "Jasmine"]
+	"skills": ["Javascript", "HTML/CSS", "PHP", "Bootstrap", "Jasmine", "jquery", "knockout.js (MVVM)"]
 };
 
 // Create a work Object
