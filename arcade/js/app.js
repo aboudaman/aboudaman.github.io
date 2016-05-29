@@ -9,11 +9,6 @@ var crossSuccess;
 var offCanvas = 505;
 // Enemies our player must avoid
 var Enemy = function(x, y) {
-    // Variables applied to each of our instances go here,
-    // we've provided one for you to get started
-    // this.x = randomGenerator(1, 200); 
-    // this.y = randomGenerator(150, 350) - 100;
-    // this.speed = randomGenerator(1, 10);
 
     this.x = x;
     this.y = y;
@@ -50,9 +45,7 @@ Enemy.prototype.render = function() {
     ctx.drawImage(Resources.get(this.sprite), this.x, this.y);
 };
 
-// Now write your own player class
-// This class requires an update(), render() and
-// a handleInput() method.
+//Write Player Clas
 var Player = function() {
     this.x = 200;
     this.y = 400;
